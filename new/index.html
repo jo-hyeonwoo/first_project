@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Versus Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".headC").click(function () {
+          $(".headB").slideToggle();
+        });
+      });
+    </script>
+    <!-- 아이콘 폰트어썸 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- 헤드 로고 메뉴 -->
+    <header>
+      <div class="container">
+        <div class="container-small">
+          <a href="index.html" class="headA"
+            ><i class="fab fa-accusoft"></i>Versus Travel</a
+          >
+          <button type="button" class="headC">
+            <span class="fa fa-bars" title="Menu"></span>
+          </button>
+        </div>
+        <nav class="headB">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">여행가이드</a></li>
+            <li><a href="#">예약안내</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">마이페이지</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤드 로고 메뉴 끝 -->
+    <!-- 히어로 이미지 슬라이드 -->
+    <section class="conA">
+      <div class="container">
+        <ul class="slides">
+          <input type="radio" name="radio-btn" id="img-1" checked />
+          <li class="slide-container">
+            <!-- 히어로 이미지 box -->
+            <div class="slide slide01"></div>
+            <!-- 히어로 이미지 좌우 버튼 -->
+            <div class="nav">
+              <label for="img-3" class="prev">&#x2039;</label>
+              <label for="img-2" class="next">&#x203a;</label>
+            </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-2" />
+          <li class="slide-container">
+            <div class="slide slide02"></div>
+            <div class="nav">
+              <label for="img-1" class="prev">&#x2039;</label>
+              <label for="img-3" class="next">&#x203a;</label>
+            </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-3" />
+          <li class="slide-container">
+            <div class="slide slide03"></div>
+            <div class="nav">
+              <label for="img-2" class="prev">&#x2039;</label>
+              <label for="img-1" class="next">&#x203a;</label>
+            </div>
+          </li>
+          <!-- 히어로 이미지 하단 인덱스 -->
+          <li class="nav-dots">
+            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          </li>
+        </ul>
+      </div>
+      <!-- 히어로 이미지 끝 -->
+      <!-- 히어로 이미지 가운데 검색창 -->
+      <div class="search">
+        <div class="search_box">
+          <div class="border">
+            <input type="text" class="search_txt" />
+            <a href="" class="search_btn"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- 히어로 이미지 가운데 검색창  끝-->
+    </section>
+    <!-- 히어로 이미지 슬라이드 -->
+
+    <section class="conB" id="contents">
+      <div class="container">
+        <div class="text">
+          <i class="fas fa-chart-bar icon"></i>
+          <h2>라이프로그란?</h2>
+          <p>
+            일상의 이런저런 것들을 기록하다 보면 보이지 않던 소중한 것들이
+            보입니다.
+          </p>
+          <a href="#">MORE... <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="text">
+          <i class="fas fa-cogs icon"></i>
+          <h2>라이프로그란?</h2>
+          <p>
+            일상의 이런저런 것들을 기록하다 보면 보이지 않던 소중한 것들이
+            보입니다.
+          </p>
+          <a href="#">MORE... <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="text">
+          <i class="fas fa-rocket icon"></i>
+          <h2>라이프로그란?</h2>
+          <p>
+            일상의 이런저런 것들을 기록하다 보면 보이지 않던 소중한 것들이
+            보입니다.
+          </p>
+          <a href="#">MORE... <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="conC" id="about">
+      <div class="container">
+        <div class="photo"></div>
+        <div class="text">
+          <h2>귀찮은 설정과 데이터관리를 하지 않아도</h2>
+          <p>
+            일상의 이런저런 것들을 기록하다 보면 보이지 않던 소중한 것들이
+            보입니다.
+          </p>
+          <a href="#">MORE... <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="conD" id="contact">
+      <div class="container">
+        <div class="photo"></div>
+        <div class="text">
+          <h2>라이프로그와 함께 하는 재미있는 일상 생활</h2>
+          <p>
+            그때그때 일상을 기록하는 라이프로그. 나중에 과거의 일상을 보면
+            그때는 알지 못했던 다양한 즐거움이 보일 것입니다.
+          </p>
+          <a href="#"
+            >라이프로그 살펴보기 <i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- footer 시작 -->
+    <footer>
+      <div class="container">
+        <div class="footA">
+          <h2>Versus Travel</h2>
+          <p>
+            주소 : 서울시 영등포구 영중로8길 6 6층<br /><a href="#"
+              >https://www.versustravel.com</a
+            >
+          </p>
+          <nav class="footD">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook" title="facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-google-plus" title="google-plus"></i
+                ></a>
+              </li>
+              <li>
+                <a href="3"
+                  ><i class="fab fa-instagram" title="instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube" title="youtube"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="footB">
+          <div>
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">설립</a></li>
+              <li><a href="#">주소</a></li>
+              <li><a href="#">지도</a></li>
+              <li><a href="#">스태프</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>SUPPORT</h3>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">1:1문의</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">AI 챗</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>CONTENTS</h3>
+            <ul>
+              <li><a href="#">여행가이드</a></li>
+              <li><a href="#">예약안내</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">마이페이지</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footC">&copy; Versus Travel corp. ALL rights Reserved</div>
+      </div>
+    </footer>
+    <!-- footer 끝 -->
+  </body>
+</html>
